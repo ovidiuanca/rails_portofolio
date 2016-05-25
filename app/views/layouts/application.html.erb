@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="index.html" class="name">Ovidiu Cota</a>
+		<%= link_to "Ovidiu Cota", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="#">Projects</a>
@@ -19,6 +19,15 @@
 	</header>
 
 <%= yield %>
+
+<footer id="main_footer">
+	<p class="copyright">&copy;Ovidiu Cota</p>
+	<nav>
+		<a href="https://www.linkedin.com/in/ovidiu-cota-0b9320b7?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+		<a href="https://github.com/ovidiucota" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+		<a href="https://www.facebook.com/ovii.dell" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+	</nav>
+</footer>
 
 </body>
 </html>
