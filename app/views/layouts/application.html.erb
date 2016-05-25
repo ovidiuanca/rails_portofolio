@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portofolio</title>
+  <title>Ovidiu Cota</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600,300,500' rel='stylesheet' type='text/css'>
+	<script src="https://use.fontawesome.com/b8bd80f625.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="main_navigation" class="clearfix">
+		<a href="index.html" class="name">Ovidiu Cota</a>
+		<nav>
+			<%= link_to "Articles", posts_path %>
+			<a href="#">Projects</a>
+			<a href="contact.html">Contact</a>
+		</nav>	
+	</header>
 
 <%= yield %>
 
