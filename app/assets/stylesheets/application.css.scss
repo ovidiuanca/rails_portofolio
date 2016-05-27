@@ -59,6 +59,12 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+.notice, .alert {
+	text-align: center;
+	padding: 1em 0;
+	border-bottom: 1px solid $border;
+}
+
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
