@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   resources :posts
   get 'welcome/index'
+
+  get '*path' => redirect('/')
 end
