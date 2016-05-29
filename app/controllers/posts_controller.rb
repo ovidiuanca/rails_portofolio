@@ -47,5 +47,4 @@ class PostsController < ApplicationController
   def find_post
     @post = Post.friendly.find(params[:id])
   end
-
 end

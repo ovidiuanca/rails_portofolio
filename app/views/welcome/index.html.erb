@@ -2,15 +2,13 @@
 	<div class="col-1 about homepage_content">
 		<h2>About</h2>
 		<hr>
-		<p>This will be he about me <a href="#">section</a> with everything that it contains.</p>
-		<p>This will be he about me section with everything that it contains.</p>
-		<p>This will be he about me section with everything that it contains.</p>
-		<p>This will be he about me section with everything that it contains.</p>
+		<p>Mlkshk blog echo park fashion axe hashtag ethical waistcoat. Gentrify kombucha blue bottle jean shorts, keytar drinking vinegar squid vinyl. Literally small batch mustache, portland pork belly 8-bit trust fund aesthetic gochujang art party pinterest gastropub hoodie chartreuse. Street art umami meggings selvage, direct trade microdosing brunch before they sold out synth small batch. Bicycle rights distillery iPhone tumblr poutine, man braid tousled austin beard VHS messenger bag williamsburg kitsch knausgaard. Pour-over hella biodiesel, cardigan lumbersexual normcore gastropub freegan forage. Skateboard pinterest blue bottle, salvia austin yuccie 8-bit echo park green juice normcore pabst chambray hoodie man bun.</p>
+
+		<p>Vice keffiyeh viral, put a bird on it everyday carry VHS 8-bit hoodie gluten-free tattooed tumblr asymmetrical. Vinyl pitchfork YOLO blue bottle taxidermy.</p>
 	</div>
 	<div class="col-2 homepage_content">
 		<h2>Stuff I've Written</h2>
 		<hr>
-
 		<% @posts.each do |post| %>
 			<h3><a href="#"><%= link_to post.title, post %></a></h3>
 			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
@@ -19,19 +17,9 @@
 	<div class="col-3 homepage_content">
 		<h2>Stuff I've Built</h2>
 		<hr>
-		<h3><a href="#">Internships platform</a></h3>
-		<p class="date">April 2016</p>
-		<h3><a href="#">RPG Web Game</a></h3>
-		<p class="date">March 18th 2016</p>
-		<h3><a href="#">Desktop RPG Game</a></h3>
-		<p class="date">March 13th 2016</p>
-		<h2>Stuff I've Built</h2>
-		<hr>
-		<h3><a href="#">Internships platform</a></h3>
-		<p class="date">April 2016</p>
-		<h3><a href="#">RPG Web Game</a></h3>
-		<p class="date">March 18th 2016</p>
-		<h3><a href="#">Desktop RPG Game</a></h3>
-		<p class="date">March 13th 2016</p>
+		<% @projects.each do |project| %>
+			<h3><a href="#"><%= link_to project.title, project %></a></h3>
+			<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+		<% end %>
 	</div>
 </div>
